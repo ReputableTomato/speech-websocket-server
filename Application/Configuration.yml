@@ -1,0 +1,9 @@
+mysql:
+    host: 127.0.0.1
+    user: ###
+    password: ###
+    database_name: ###
+application:
+    port: 7000
+    websocket_id_length: 16
+jwt_key: ###

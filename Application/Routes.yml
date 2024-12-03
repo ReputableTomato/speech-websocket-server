@@ -1,0 +1,5 @@
+user_routes:
+  user/account/login:
+    login_required: No
+  speech/recognize:
+    login_required: No

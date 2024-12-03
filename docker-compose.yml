@@ -1,0 +1,21 @@
+version: '3'
+services:
+    voice_service:
+        restart: always
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        volumes:
+            - './Application/:/home/application/'
+        networks:
+            voice:
+                ipv4_address: 10.1.5.4
+        ports:
+            - "0.0.0.0:7000:7000"
+networks:
+    voice:
+        driver: bridge
+        ipam:
+            driver: default
+            config:
+                - subnet: "10.1.5.0/16"

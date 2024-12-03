@@ -1,0 +1,9 @@
+tornado
+bcrypt
+mysql-connector-python-rf
+pyyaml
+pymongo
+pynacl
+redis
+AudioSegment
+jwt
